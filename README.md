@@ -101,7 +101,7 @@ python -m src.pipeline --skip-ingest --skip-features    # reuse existing feature
   rather than raw accuracy, since the classes are imbalanced.
 - The four `completed_*` checkpoint flags (features 14-17) are strong,
   near-deterministic late-funnel signals, so the model scores very high
-  (ROC AUC ~0.99 in validation). For a harder, earlier-warning model — useful
+  (ROC AUC ~0.9120 in validation). For a harder, earlier-warning model — useful
   if you want to flag at-risk users *before* they reach those checkpoints —
   drop those columns from `FEATURE_COLUMNS` in [src/features.py](src/features.py)
   before training.
